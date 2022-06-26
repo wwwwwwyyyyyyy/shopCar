@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <my-header />
+    <my-header :styles="styles" :title="title" />
     <my-goods />
     <my-footer />
   </div>
@@ -15,6 +15,15 @@ export default {
     MyHeader,
     MyGoods,
     MyFooter
+  },
+  data() {
+    return {
+      styles: {
+        background: 'aqua',
+        color: 'red'
+      },
+      title: '购物车案例'
+    }
   }
 }
 </script>
