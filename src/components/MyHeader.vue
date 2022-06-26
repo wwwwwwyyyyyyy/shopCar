@@ -1,5 +1,5 @@
 <template>
-  <div class="my-header" :style="styles">
+  <div class="my-header" :style="{ backgroundColor: background, color }">
     {{ title }}
   </div>
 </template>
@@ -11,9 +11,13 @@ export default {
       type: String,
       required: true
     },
-    styles: {
+    background: {
       type: String,
       required: true
+    },
+    color: {
+      type: String,
+      default: '#fff'
     }
   }
 }
