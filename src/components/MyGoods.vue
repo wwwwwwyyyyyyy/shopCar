@@ -17,7 +17,7 @@
       <div class="top">{{ goodsObj.goods_name }}</div>
       <div class="bottom">
         <span class="price">¥ {{ goodsObj.goods_price }}</span>
-        <span> <MyCount /> </span>
+        <span> <MyCount :goods="goodsObj" /> </span>
       </div>
     </div>
   </div>
